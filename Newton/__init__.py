@@ -3,6 +3,9 @@ import os
 import sys
 import time
 from datetime import datetime
+from pyrogram.types import Message
+from pyrogram import Client, errors
+from pyrogram.errors.exceptions.bad_request_400 import PeerIdInvalid, ChannelInvalid
 from telethon import TelegramClient 
 
 StartTime = time.time()
@@ -136,6 +139,15 @@ api_id = API_ID
 api_hash = API_HASH
 telethn = TelegramClient("newton", api_id, api_hash)
 
+pbot = Client(
+    ":memory:",
+    api_id=API_ID,
+    api_hash=API_HASH,
+    bot_token=TOKEN,
+    workers=min(32, os.cpu_count() + 4),
+)
+apps = []
+apps.append(pbot)
 
 updater = tg.Updater(TOKEN, workers=WORKERS)
 
