@@ -61,8 +61,11 @@ Newton can be found on Telegram [here]().
 
 # ᴄʀᴇᴅɪᴛꜱ
 
-- [Axel](https://github.com/AXELXDEV) ``Bot-Owner``
+- [BRAHMAN_OP](https://github.com/Meizzmrperfect) ``Bot-Owner``
 - [Null-Coder](https://github.com/AMANTYA1) ``Repo Creator``
+- [Axel](https://github.com/AXELXDEV) ``Dev``
+- [ImmortaLs](https://github.com/yegzta) ``Dev``
+
 
 _______
 
