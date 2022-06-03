@@ -383,7 +383,7 @@ def help_button(update, context):
 
 def shukurenai_about_callback(update, context):
     query = update.callback_query
-if query.data == "shukurenai_":
+    if query.data == "shukurenai_":
         query.message.edit_text(
             text="๏ I'm *Newton*, a powerful group management bot built to help you manage your group easily."
             "\n• I can restrict users."
