@@ -79,29 +79,30 @@ def get_readable_time(seconds: int) -> str:
 
     return ping_time
 
-
 PM_START_TEXT = """
-*Hello {} !*
-✪ I'm an management bot 🔥 
+*👋 Hᴇʟʟᴏ {}*
+
+Hᴇʏ Tʜᴇʀᴇ Mʏ Nᴀᴍᴇ *Nᴇᴡᴛᴏɴ* ɪ Aᴍ Sɪᴍᴘʟᴇ Aɴɪᴇ Tʜᴇᴍᴇᴅ Mᴀɴɢᴇᴍᴇɴᴛ ᴏR Mᴜsɪᴄ Bᴏᴛ
+Hit /Help To Find Out [✨](https://telegra.ph/file/e3ec305fe73fe5c9584ef.jpg) More About How To Use Me To My Full Potential!
 ────────────────────────
-× *Uptime:* `{}`
-× `{}` *users, across* `{}` *chats.*
+乂 Ping Time: {}
+乂 {} User, Database {} Chats.
 ────────────────────────
-✪ Hit /help to see my available commands.
+*Powered By: @BotDuniyaXd*
 """
 
 buttons = [
     [
         InlineKeyboardButton(
-            text="➕ Add To Your Group ➕", url="t.me/Anierobot_bot?startgroup=new"),
+            text="➕ Add To Your Group ➕", url="t.me/NEWTONS_BOT?startgroup=new"),
     ],
     [                  
                        InlineKeyboardButton(
-                             text="Support🚑",
+                             text="SᴜᴘᴘᴏʀT📩",
                              url=f"https://t.me/{SUPPORT_CHAT}"),
                        InlineKeyboardButton(
-                             text="Updates🛰️",
-                             url=f"https://t.me/AnieBots"),
+                             text="Uᴘᴅᴀᴛᴇs📡",
+                             url=f"https://t.me/BotDuniyaXd"),
     ],
     [
         InlineKeyboardButton(
@@ -251,7 +252,7 @@ def start(update: Update, context: CallbackContext):
                 [
                   [
                   InlineKeyboardButton(text="✧ Support ", url=f"https://telegram.dog/{SUPPORT_CHAT}"),
-                  InlineKeyboardButton(text="✧ Updates ", url=f"t.me/AnieBots"),
+                  InlineKeyboardButton(text="✧ Updates ", url=f"t.me/BOTDUNIYAXD"),
                   ]
                 ]
             ),
@@ -384,14 +385,14 @@ def shukurenai_about_callback(update, context):
     query = update.callback_query
     if query.data == "shukurenai_":
         query.message.edit_text(
-            text="๏ I'm *Anie*, a powerful group management bot built to help you manage your group easily."
+            text="๏ I'm *Newton*, a powerful group management bot built to help you manage your group easily."
             "\n• I can restrict users."
             "\n• I can greet users with customizable welcome messages and even set a group's rules."
             "\n• I have an advanced anti-flood system."
             "\n• I can warn users until they reach max warns, with each predefined actions such as ban, mute, kick, etc."
             "\n• I have a note keeping system, blacklists, and even predetermined replies on certain keywords."
             "\n• I check for admins' permissions before executing any command and more stuffs"
-            "\n\n_Anie's licensed under the GNU General Public License v3.0_"
+            "\n\n_Newton's licensed under the GNU General Public License v3.0_"
             "\n\n Click on button bellow to get basic help for Anie.",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
@@ -459,17 +460,17 @@ def shukurenai_about_callback(update, context):
         )
     elif query.data == "shukurenai_support":
         query.message.edit_text(
-            text="*๏ Anie support chats*"
+            text="*乂 NEWTON support chats*"
             "\nJoin My Support Group/Channel for see or report a problem on Shu Kurenai.",
             parse_mode=ParseMode.MARKDOWN,
             reply_markup=InlineKeyboardMarkup(
                 [
                  [
-                    InlineKeyboardButton(text="Support", url="https://t.me/AniebotSupports"),
-                    InlineKeyboardButton(text="Updates", url="https://t.me/AnieBots"),
+                    InlineKeyboardButton(text="Sᴜᴘᴘᴏʀᴛ", url="https://t.me/AniebotSupports"),
+                    InlineKeyboardButton(text="Uᴘᴅᴀᴛᴇs", url="https://t.me/AnieBots"),
                  ],
                  [
-                    InlineKeyboardButton(text="Go Back", callback_data="shukurenai_"),
+                    InlineKeyboardButton(text="Gᴏ Bᴀᴄᴋ", callback_data="shukurenai_"),
                  
                  ]
                 ]
@@ -479,30 +480,30 @@ def shukurenai_about_callback(update, context):
 
     elif query.data == "shukurenai_credit":
         query.message.edit_text(
-            text=f"๏ Credis for Anie\n"
-            "\nHere Developers Making And Give Inspiration For Made The Anie",
+            text=f"乂 Cʀᴇᴅɪs Fᴏʀ Nᴇᴡᴛᴏɴ\n"
+            "\nᴘʟᴇᴀsᴇ Fᴏʟʟᴏᴡ ɪɴ Gɪᴛ 💔",
             parse_mode=ParseMode.MARKDOWN,
             reply_markup=InlineKeyboardMarkup(
                 [
                  [
-                    InlineKeyboardButton(text="Zaid", url="https://github.com/ITZ-ZAID"),
-                    InlineKeyboardButton(text="Kishore", url="https://github.com/AASFCYBERKING"),
-                    InlineKeyboardButton(text="Aman", url="https://github.com/AMANTYA1"), 
+                    InlineKeyboardButton(text="Sʜᴜʙʜᴀɴsʜᴜ", url="https://github.com/AMANTYA1"),
+                    InlineKeyboardButton(text="BʀᴀHMᴀɴ", url="https://github.com/Meizzmrperfect"),
+                    InlineKeyboardButton(text="Axᴇʟ", url="https://github.com/AXELXDEV"), 
                  ],
                  [
-                    InlineKeyboardButton(text="Go Back", callback_data="shukurenai_"),
+                    InlineKeyboardButton(text="☜︎︎︎ Bᴀᴄᴋ", callback_data="shukurenai_"),
                  ]
                 ]
             ),
         )
     elif query.data == "shukurenai_donate":
         query.message.edit_text(
-            text=f"๏ Donate for Anie",
+            text=f"๏ Iғ Yᴏᴜ Wᴀɴᴛ Tᴏ Dᴏɴᴀᴛᴇ Fᴏʀ Nᴇᴡᴛᴏɴ",
             parse_mode=ParseMode.MARKDOWN,
             reply_markup=InlineKeyboardMarkup(
                 [
                  [
-                    InlineKeyboardButton(text="Razorpay", url="https://rzp.io/l/GODFATHERDONATIONS"),
+                    InlineKeyboardButton(text="Jᴏɪɴ", url="https://t.me/BotDuniyaXD"),
                  ],
                  [
                     InlineKeyboardButton(text="Go Back", callback_data="shukurenai_back"),
@@ -774,10 +775,10 @@ def donate(update: Update, context: CallbackContext):
             DONATE_STRING, parse_mode=ParseMode.MARKDOWN, disable_web_page_preview=True
         )
 
-        if OWNER_ID != 1606221784:
+        if OWNER_ID != 1920507972:
             update.effective_message.reply_text(
                 "I'm free for everyone 😎 If you wanna make me smile, just join"
-                "[My Channel](https://t.me/TGN_Donation_Bot)".format(DONATION_LINK),
+                "[My Channel](https://t.me/BotDuniyaXD)".format(DONATION_LINK),
                 parse_mode=ParseMode.MARKDOWN,
             )
     else:
@@ -827,10 +828,10 @@ def main():
                   [                  
                        InlineKeyboardButton(
                              text="Support🚑",
-                             url=f"https://t.me/AniebotSupports"),
+                             url=f"https://t.me/godzilla_chatting"),
                        InlineKeyboardButton(
                              text="Updates🛰️",
-                             url="https://t.me/AnieBots")
+                             url="https://t.me/BotDuniyaXD")
                      ] 
                 ]
             ),
